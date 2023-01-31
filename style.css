@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    font-size: 15px ;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    padding: 50px 70px;
+    
+}
+.logo{
+    height:45px ;
+    
+}
+.title{
+    margin-bottom: 55px;
+}
+.content{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.text{
+    padding:  55px 40px;
+}
+.text h1{
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 25px;
+    
+    
+}
+.text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    margin-bottom: 22px;
+    line-height: 1.4em;
+
+}
+.button{
+    padding: 10px 45px;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    color: hsl(257, 40%, 49%);
+    font-size: 15px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 8px 17px -8px rgba(0,0,0,0.8);
+    
+    
+}
+
+.button:hover{
+    background-color:hsl(300, 69%, 71%) ;
+    color: #fff;
+}
+.footer{
+    text-align:  right ;
+   
+}
+.footer a i{
+    color: #fff;
+    font-size: 18px;
+    position: relative ;
+    letter-spacing: 2rem;
+    transition: all .3s ease ;
+   
+
+}
+
+.social a:not(:first-child){
+    margin-left: 3rem;
+   
+   
+}
+
+.footer a i::after{
+    content:'';
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    left: -12px;
+    bottom: -10px;
+    transition: all .3s ease ;
+}
+.footer a:nth-child(2){
+    margin-left: .4rem;
+}
+
+
+.footer a:hover{
+    color: hsl(300, 69%, 71%);
+
+}
+
+.footer a i:hover::after{
+    border-color: hsl(300, 69%, 71%);
+}
+
+
+
+@media only screen and (max-width:400px){
+
+
+    body{
+        background-image: url(images/bg-mobile.svg);
+        background-repeat:repeat;
+        background-size: cover;
+        background-size: 100% 100% ;
+        
+    }
+    .container{
+       padding: 0  ;
+       height: 90vh;
+      
+    }
+    .logo{
+        align-items: left;
+        padding-left: 30px;
+        height: 35px;
+        margin-bottom: -10px;
+        
+    }
+
+    .text{
+        padding: 5px;
+    }
+    
+    .content{
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 40px;
+    }
+
+    .img img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+.text h1{
+    font-size: 27px;
+}
+
+.text p{
+    font-size: 17px;
+}
+
+.footer{
+    margin-top: 40px;
+    text-align: center;
+    padding-left: 40px;
+}
+}
